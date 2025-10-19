@@ -13,6 +13,7 @@ echo '*.pem' >> .gitignore
 goenv install 1.25.3
 goenv local 1.25.3
 go version
+```
 - Goの現在の依存関係を解消する
 go mod tidy
 - Goの依存関係を更新するので依存関係も変化する可能性がある
