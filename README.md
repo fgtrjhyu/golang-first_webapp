@@ -7,6 +7,13 @@ git config --global init.defaultBranch main
 ```bash
 git remote add oigin git&commat;github.com:*username*/*repositoryname*.git
 ```
+- mkcertでTLSの鍵を作成する方法
+```bash
+mkcert \
+  -cert-file certs/localhost+1.pem \
+  -key-file certs/localhost+1-key.pem \
+  localhost 127.0.0.1 ::1
+```
 - markdownファイルはglowで読みます
 ```bash
 sudo apt install -y glow
