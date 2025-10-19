@@ -41,8 +41,8 @@ func index(writer http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
-	const certFile = "localhost+1.pem"
-	const keyFile = "localhost+1-key.pem"
+	const certFile = "certs/localhost+1.pem"
+	const keyFile = "certs/localhost+1-key.pem"
 	const addr = ":8443"
 
 	mux := http.NewServeMux()
