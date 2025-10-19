@@ -9,6 +9,7 @@ glow README.md
 - mkcertで作った鍵(*.pem)を入れてはいけません
 echo '*.pem' >> .gitignore
 - Goのバージョン更新
+```bash
 goenv install 1.25.3
 goenv local 1.25.3
 go version
