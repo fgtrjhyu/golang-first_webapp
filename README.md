@@ -26,11 +26,11 @@ go version
 ```bash
 go mod tidy
 ```
-- Goの依存関係を更新するので依存関係も変化する可能性がある
+- 依存先を最新化(./...はカレントディレクトリの配下を再帰的に指すgoのglobの構文)
 ```bash
 go get -u ./...
 ```
-- 前のgo mod tidyでの更新を更に反映する
+- 前の`go get -u ./...`での更新を更に反映する
 ```bash
 go mod tidy
 ```
